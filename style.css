@@ -97,8 +97,8 @@ blockquote p:last-child {
 html, #container, .inner { background-color:transparent;}
 html {
   background:
-    linear-gradient(to right, transparent 0%, #061826 80%),
-    url(image_ocean.png) 25% center / auto 85vh no-repeat;
+    linear-gradient(to right, transparent 0%, #061826 75%),
+    url(image_ocean.png) 20% 85% / auto 90vh no-repeat;
   background-color: #061826;
 }
 body {
