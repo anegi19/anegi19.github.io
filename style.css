@@ -156,3 +156,13 @@ ul.main-menu li a.active {
   object-fit: cover;
   filter: grayscale(100%);
 }
+
+.ocean-link {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 1;
+  display: block;
+}
