@@ -98,7 +98,7 @@ html, #container, .inner { background-color:transparent;}
 html {
   background:
     linear-gradient(to right, transparent 0%, #061826 80%),
-    url(image_ocean.png) left center / auto 85vh no-repeat;
+    url(image_ocean.png) 25% center / auto 85vh no-repeat;
   background-color: #061826;
 }
 body {
