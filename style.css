@@ -91,10 +91,15 @@ blockquote p:last-child {
  */
 
 /* Full size background image */
+
+
+
 html, #container, .inner { background-color:transparent;}
 html {
-  background:url(image_ocean.png) center center no-repeat fixed;
-  background-size:cover;
+  background:
+    linear-gradient(to right, transparent 0%, #061826 80%),
+    url(image_ocean.png) left center / auto 100vh no-repeat;
+  background-color: #061826;
 }
 body {
   max-width:800px;
