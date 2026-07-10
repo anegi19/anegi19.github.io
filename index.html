@@ -1,88 +1,98 @@
 <!doctype html>
-<html>
-  <head>
-    <!-- Page setup -->
-    <meta charset="utf-8">
-    <title>Ankita Negi</title>
-    <meta name="description" content="Profile information of Ankita negi">
-    <meta name="author" content="Ankita N >
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-    <link rel="icon" type="image/png" href="favicon.png">
-  
-    <!-- Stylesheets -->
-    <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-   
-    <!-- Custom styles -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<html lang="en">
+<head>
+  <!-- Page setup -->
+  <meta charset="utf-8">
+  <title>Ankita Negi</title>
+  <meta name="description" content="Profile information of Ankita Negi">
+  <meta name="author" content="Ankita Negi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+  <link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    
-  </head>
-  
-  <body>
+  <!-- Stylesheets -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
-    <header id="header">
-      <img src="logo.png" width="200" >
-      <h1>My Website</h1>
-      
-      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-    <ul class="main-menu">
-      <li><a href="#home" data-bg="home">home</a></li>
-      <li><a href="#about" data-bg="about">about</a></li>
-      <li><a href="#contact" data-bg="contact">contact</a></li>
-    </ul>               
-    </header>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-   <!-- <a href="https://doi.org/10.1364/OPTICA.568949" class="ocean-link" target="_blank"></a> -->
-   
-    <div id="container">
-      <div class="inner">
-        <div id="content"> 
-          
-          <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-             Hello! I am Ankita, I am a PhD in Physics who is very much interested in all things science and data. I have been working with light and nuclei for the past 5 years. If you want to know more about my PhD project, here is a small blog i wrote as a beginner in my PhD first year.
-              <a href="https://science-chatter.blogs.uni-hamburg.de/?p=232/" >My Blog</a> 
-            </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-               Here is my
-                <a href="RenderCV_ECMWF.pdf" target="_blank">
-                CV
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              <a href="https://www.linkedin.com/in/anegi19/"
-       target="_blank"
-       aria-label="LinkedIn">
-      <i class="fab fa-linkedin" style="font-size:32px;color:#0077B5;"></i>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header id="header">
+  <img src="logo.png" alt="Ankita Negi">
+
+  <h1>Ankita Negi</h1>
+
+  <ul class="main-menu">
+    <li><a href="#home" data-bg="home">Home</a></li>
+    <li><a href="#about" data-bg="about">About</a></li>
+    <li><a href="#contact" data-bg="contact">Contact</a></li>
+  </ul>
+</header>
+
+<div id="container">
+  <div class="inner">
+    <div id="content">
+
+      <!-- Home -->
+      <div id="home" class="content-region hide">
+        <h2>Home</h2>
+
+        <p>
+          Hello! I am Ankita. I am a PhD in Physics with a strong interest in
+          science, data, and machine learning. I have been working with light
+          and nuclei for the past five years.
+        </p>
+
+        <p>
+          If you'd like to learn more about my PhD project, here is a blog post
+          I wrote during my first year:
+          <a href="https://science-chatter.blogs.uni-hamburg.de/?p=232/" target="_blank">
+            My Blog
           </a>
-            </p>
-          </div>
-          
-        </div>
+        </p>
       </div>
-    </div>
 
-    <footer>  
-      Footer region
-    </footer>
-    
-    <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
-    
-  </body>
+      <!-- About -->
+      <div id="about" class="content-region hide">
+        <h2>About</h2>
+
+        <p>
+          You can view my
+          <a href="RenderCV_ECMWF.pdf" target="_blank">CV</a>.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div id="contact" class="content-region hide">
+        <h2>Contact</h2>
+
+        <p>
+          <a href="https://www.linkedin.com/in/anegi19/" target="_blank">
+            <i class="fab fa-linkedin" style="color:#0077B5;font-size:28px;"></i>
+            LinkedIn
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Ankita Negi
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
