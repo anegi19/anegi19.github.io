@@ -157,7 +157,7 @@ ul.main-menu li a.active {
   filter: grayscale(100%);
 }
 
-.ocean-link {
+/*.ocean-link {
   position: fixed;
   left: 0;
   top: 0;
@@ -165,7 +165,7 @@ ul.main-menu li a.active {
   height: 100vh;
   z-index: 1;
   display: block;
-}
+}*/
 
 html {
   transition: background-image 1s ease;
