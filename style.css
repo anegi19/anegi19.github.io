@@ -236,7 +236,12 @@ ul.main-menu li a.active {
 }
 
 
-
+#last-updated {
+  font-size: 1.2rem;
+  color: #cfd2da;
+  opacity: 0.8;
+  margin-left: 12px; /* space before the timestamp */
+}
 
 
 

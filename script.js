@@ -31,6 +31,14 @@
       $('#ocean-link-img').attr('src', bgImages[region]);
     }
 
+    // -------- Last updated timestamp --------
+
+    var lastModified = new Date(document.lastModified);
+    var options = { day: 'numeric', month: 'short', year: 'numeric' };
+    var formatted = lastModified.toLocaleDateString('en-GB', options);
+
+    document.getElementById('last-updated').textContent = 'Last updated: ' + formatted;
+
   });
 
 })(jQuery);
