@@ -1,0 +1,83 @@
+@media print {
+  html, body {
+  background: none !important;
+  color: #000 !important;
+  width: auto;
+  max-width: none;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Collapse wrapper divs so their children become direct flex items */
+#container, .inner, #content {
+  display: contents;
+}
+
+.ocean-link {
+  display: none !important;
+}
+
+ul.main-menu {
+  display: none !important;
+}
+
+header, #content, footer, #updates {
+  background: none !important;
+  color: #000 !important;
+  box-shadow: none;
+  padding: 0;
+}
+
+#updates {
+  position: static !important;
+  width: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.updates-list {
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+#updates h3 {
+  margin-bottom: 0.5rem; /* was 1rem in your main CSS */
+}
+
+.updates-list li {
+  padding: 4px 0; /* was 8px 0 */
+  border-bottom: 1px solid #ccc; /* keep a visible divider but lighter for print */
+}
+
+.update-date,
+.update-text {
+  margin: 0;
+  line-height: 1.3; /* tighter than default */
+}
+
+.content-region {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+/* Print order: Home, Recent updates, Contact */
+header       { order: 1; }
+#home        { order: 2; }
+#updates     { order: 3; }
+#contact     { order: 4; }
+footer       { order: 5; }
+
+/* About hidden in print — remove this rule if you want it included */
+#about {
+  display: none !important;
+}
+}
