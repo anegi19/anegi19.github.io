@@ -148,8 +148,8 @@ ul.main-menu li a.active {
 
 /* Circular logo */
 #header img {
-  width: 200px;
-  height: 200px;
+  width: 120px; /* reduced from 200px */
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(100%);
@@ -235,6 +235,21 @@ ul.main-menu li a.active {
   background: transparent;
 }
 
+.watchlist-list {
+  margin: 0 0 1.5em 1.5em; /* left margin needed so bullets have room to show */
+  padding: 0;
+  list-style: disc;
+}
+
+.watchlist-list li {
+  margin-bottom: 0.2em;
+  line-height: 1.3;
+}
+
+.watchlist-list a {
+  font-size: 1.5rem;
+}
+
 
 #last-updated {
   font-size: 1.2rem;
@@ -261,6 +276,7 @@ ul.main-menu li a.active {
   margin-bottom: 0.15em;
   line-height: 1.3;
 }
+
 
 /* Hide ocean-link on small screens where it would collide with content */
 @media (max-width: 900px) {
