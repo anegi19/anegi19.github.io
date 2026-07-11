@@ -58,9 +58,6 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
 }
-p + p {
-
-}
 
 /**
  * Quotes & Blockquotes
@@ -76,7 +73,6 @@ q:after {
 }
 
 blockquote {
-  /*background-color: #F8F8F8;*/
   border-left: 2px solid #AFC0D2;
   margin: 1.6em 10%;
   padding: .75em 1em;
@@ -90,24 +86,25 @@ blockquote p:last-child {
  * Layout styles
  */
 
-/* Full size background image */
+html, #container, .inner { background-color:transparent; }
 
-
-
-html, #container, .inner { background-color:transparent;}
 html {
-  background:
-    linear-gradient(to right, transparent 0%, #061826 75%),
-    url(image_ocean.png) 20% 25% / auto 90vh no-repeat;
   background-color: #061826;
+  background-image: linear-gradient(to right, transparent 0%, #061826 75%);
 }
+
 body {
   width:800px;
   margin-left:auto;
   margin-right:8%;
   margin-top:40px;
+  position: relative;
+  z-index: 2;
 }
+
 header, #content, footer { 
+  position: relative;
+  z-index: 2;
   background: rgba(0,0,0,.8); 
   padding:25px;
   color:#FFFFFF; 
@@ -147,7 +144,6 @@ ul.main-menu li a.active {
   display:block;
 }
 
-
 /* Circular logo */
 #header img {
   width: 200px;
@@ -157,37 +153,21 @@ ul.main-menu li a.active {
   filter: grayscale(100%);
 }
 
+<<<<<<< HEAD
 /*.ocean-link {
+=======
+/* Clickable background-style image */
+.ocean-link {
+>>>>>>> 07a8f95 (updated the links)
   position: fixed;
-  left: 0;
-  top: 0;
-  width: 50vw;
-  height: 100vh;
+  left: 20%;
+  top: 25%;
   z-index: 1;
   display: block;
 }*/
 
-html {
-  transition: background-image 1s ease;
-}
-
-html.bg-home {
-  background:
-    linear-gradient(to right, transparent 0%, #061826 75%),
-    url(image_grey.png) 20% 25% / auto 90vh no-repeat;
-  background-color:#061826;
-}
-
-html.bg-about {
-  background:
-    linear-gradient(to right, transparent 0%, #061826 75%),
-    url(image_ocean.png) 20% 25% / auto 90vh no-repeat;
-  background-color:#061826;
-}
-
-html.bg-contact {
-  background:
-    linear-gradient(to right, transparent 0%, #061826 75%),
-    url(image_viridis.png) 20% 25% / auto 90vh no-repeat;
-  background-color:#061826;
+.ocean-link img {
+  display: block;
+  height: 90vh;
+  width: auto;
 }

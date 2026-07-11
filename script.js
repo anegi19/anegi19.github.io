@@ -19,18 +19,16 @@
     $('.main-menu a[href="'+ region +'"]').addClass('active');
 
 
-    // -------- Ocean background change --------
+    // -------- Ocean background image change --------
 
-    if (region === "#home") {
-      document.documentElement.className = "bg-home";
-    }
+    var bgImages = {
+      "#home": "image_grey.png",
+      "#about": "image_ocean.png",
+      "#contact": "image_viridis.png"
+    };
 
-    else if (region === "#about") {
-      document.documentElement.className = "bg-about";
-    }
-
-    else if (region === "#contact") {
-      document.documentElement.className = "bg-contact";
+    if (bgImages[region]) {
+      $('#ocean-link-img').attr('src', bgImages[region]);
     }
 
   });
