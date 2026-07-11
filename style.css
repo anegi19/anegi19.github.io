@@ -243,8 +243,24 @@ ul.main-menu li a.active {
   margin-left: 12px; /* space before the timestamp */
 }
 
+#about h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5rem; /* override the global 2rem */
+}
 
+#about h4:first-child {
+  margin-top: 0;
+}
 
+#about ul {
+  margin: 0 0 1.5em 1.5em;
+  padding: 0;
+}
+
+#about li {
+  margin-bottom: 0.15em;
+  line-height: 1.3;
+}
 
 /* Hide ocean-link on small screens where it would collide with content */
 @media (max-width: 900px) {
