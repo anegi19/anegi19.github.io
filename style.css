@@ -153,18 +153,14 @@ ul.main-menu li a.active {
   filter: grayscale(100%);
 }
 
-<<<<<<< HEAD
-/*.ocean-link {
-=======
 /* Clickable background-style image */
 .ocean-link {
->>>>>>> 07a8f95 (updated the links)
   position: fixed;
   left: 20%;
   top: 25%;
   z-index: 1;
   display: block;
-}*/
+}
 
 .ocean-link img {
   display: block;
