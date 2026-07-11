@@ -156,14 +156,15 @@ ul.main-menu li a.active {
 /* Clickable background-style image */
 .ocean-link {
   position: fixed;
-  left: 20%;
-  top: 25%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
   display: block;
 }
 
 .ocean-link img {
   display: block;
-  height: 90vh;
+  max-height: 90vh;
   width: auto;
 }
