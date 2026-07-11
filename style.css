@@ -95,7 +95,7 @@ html {
 
 body {
   width: 800px;
-  max-width: 62vw;
+  max-width: 40vw;
   margin-left: calc(30vw + 2vw);
   margin-right: 8%;
   margin-top: 40px;
@@ -173,6 +173,73 @@ ul.main-menu li a.active {
   width: auto;
   height: auto;
 }
+
+#updates {
+  position: fixed;
+  top: 40px; /* matches body's margin-top */
+  right: 2%; /* matches body's margin-right */
+  transform: none;
+  z-index: 2;
+  width: 240px;
+  max-height: calc(100vh - 250px);
+  overflow: visible;
+  background: rgba(47, 45, 45, 0.6);
+  padding: 20px 8px 20px 20px; /* less padding on the right */
+  color: #EF6D3D;
+}
+
+#updates h3 {
+  margin-bottom: 1rem;
+}
+
+.updates-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: calc(100vh - 300px);
+  overflow-y: auto;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(255,255,255,0.2) transparent; /* Firefox */
+}
+
+.updates-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(212, 170, 45, 0.1);
+  font-size: 1.3rem;
+}
+
+.updates-list li:last-child {
+  border-bottom: none;
+}
+
+.update-date {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+
+.update-text {
+  display: block;
+  color: #cfd2da;
+}
+
+/* thin scrollbar to match the theme (Chrome/Safari/Edge) */
+.updates-list::-webkit-scrollbar {
+  width: 4px;
+}
+.updates-list::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+}
+.updates-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+
+
+
 
 /* Hide ocean-link on small screens where it would collide with content */
 @media (max-width: 900px) {
